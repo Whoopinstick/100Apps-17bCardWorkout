@@ -21,8 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = CardSelectionVC()
         window?.makeKeyAndVisible()
-        
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

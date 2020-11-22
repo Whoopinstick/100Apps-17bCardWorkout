@@ -12,6 +12,7 @@
 		0A6588B3256AF7AA0039A01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6588B2256AF7AA0039A01C /* Assets.xcassets */; };
 		0A6588B6256AF7AA0039A01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */; };
 		0A6588C4256AF7EF0039A01C /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588C3256AF7EF0039A01C /* CardSelectionVC.swift */; };
+		0A6588CA256AFB580039A01C /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588C9256AFB580039A01C /* CWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0A6588B5256AF7AA0039A01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A6588B7256AF7AA0039A01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6588C3256AF7EF0039A01C /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		0A6588C9256AFB580039A01C /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */,
+				0A6588C9256AFB580039A01C /* CWButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				0A6588AA256AF7A90039A01C /* AppDelegate.swift in Sources */,
 				0A6588AC256AF7A90039A01C /* SceneDelegate.swift in Sources */,
 				0A6588C4256AF7EF0039A01C /* CardSelectionVC.swift in Sources */,
+				0A6588CA256AFB580039A01C /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
