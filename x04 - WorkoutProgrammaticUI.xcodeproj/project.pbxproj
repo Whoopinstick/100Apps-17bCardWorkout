@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		0A6588AA256AF7A90039A01C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588A9256AF7A90039A01C /* AppDelegate.swift */; };
 		0A6588AC256AF7A90039A01C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588AB256AF7A90039A01C /* SceneDelegate.swift */; };
-		0A6588AE256AF7A90039A01C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588AD256AF7A90039A01C /* ViewController.swift */; };
-		0A6588B1256AF7A90039A01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6588AF256AF7A90039A01C /* Main.storyboard */; };
 		0A6588B3256AF7AA0039A01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6588B2256AF7AA0039A01C /* Assets.xcassets */; };
 		0A6588B6256AF7AA0039A01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */; };
+		0A6588C4256AF7EF0039A01C /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6588C3256AF7EF0039A01C /* CardSelectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A6588A6256AF7A90039A01C /* x04 - WorkoutProgrammaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "x04 - WorkoutProgrammaticUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6588A9256AF7A90039A01C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A6588AB256AF7A90039A01C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A6588AD256AF7A90039A01C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A6588B0256AF7A90039A01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A6588B2256AF7AA0039A01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6588B5256AF7AA0039A01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A6588B7256AF7AA0039A01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A6588C3256AF7EF0039A01C /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,38 @@
 		0A6588A8256AF7A90039A01C /* x04 - WorkoutProgrammaticUI */ = {
 			isa = PBXGroup;
 			children = (
-				0A6588A9256AF7A90039A01C /* AppDelegate.swift */,
-				0A6588AB256AF7A90039A01C /* SceneDelegate.swift */,
-				0A6588AD256AF7A90039A01C /* ViewController.swift */,
-				0A6588AF256AF7A90039A01C /* Main.storyboard */,
 				0A6588B2256AF7AA0039A01C /* Assets.xcassets */,
-				0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */,
 				0A6588B7256AF7AA0039A01C /* Info.plist */,
+				0A6588BF256AF7CA0039A01C /* Delegate */,
+				0A6588C6256AF7FE0039A01C /* View */,
+				0A6588C2256AF7DF0039A01C /* Controller */,
 			);
 			path = "x04 - WorkoutProgrammaticUI";
+			sourceTree = "<group>";
+		};
+		0A6588BF256AF7CA0039A01C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0A6588A9256AF7A90039A01C /* AppDelegate.swift */,
+				0A6588AB256AF7A90039A01C /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0A6588C2256AF7DF0039A01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A6588C3256AF7EF0039A01C /* CardSelectionVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A6588C6256AF7FE0039A01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +147,6 @@
 			files = (
 				0A6588B6256AF7AA0039A01C /* LaunchScreen.storyboard in Resources */,
 				0A6588B3256AF7AA0039A01C /* Assets.xcassets in Resources */,
-				0A6588B1256AF7A90039A01C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6588AE256AF7A90039A01C /* ViewController.swift in Sources */,
 				0A6588AA256AF7A90039A01C /* AppDelegate.swift in Sources */,
 				0A6588AC256AF7A90039A01C /* SceneDelegate.swift in Sources */,
+				0A6588C4256AF7EF0039A01C /* CardSelectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A6588AF256AF7A90039A01C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A6588B0256AF7A90039A01C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A6588B4256AF7AA0039A01C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whoopinstick.x04---WorkoutProgrammaticUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whoopinstick.x04---WorkoutProgrammaticUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
